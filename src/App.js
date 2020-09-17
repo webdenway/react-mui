@@ -28,9 +28,6 @@ function App() {
             <Link to="/AllPost" style={{color:'white'}}> All Post </Link>
             </div>
 
-            {/* <div style={{marginRight:30,}}>
-            <Link to="/PostDetails" style={{color:'white'}}>Post Details </Link>
-            </div> */}
           
     </div>
     </AppBar>

@@ -31,7 +31,7 @@ const Cards =  (props)=> {
   // console.log(props.postdetails)
   const {id, title} = props.postdetails;
   const classes = useStyles();
-  // const bull = <span className={classes.bullet}></span>;
+
 
   return (
       
