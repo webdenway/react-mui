@@ -18,7 +18,13 @@ const Comment = (props) => {
                 
             })
     }, []);
-    console.log(images)
+    // console.log(images)
+    
+    const picture = images.map(image=>(
+        <img src={image.urls[4][512]} style={{borderRadius:100, height:100,marginTop: 60, marginLeft:15}} alt="img"/>
+    
+        ))
+    const randomNum = Math.floor(Math.random() * picture.length);
   
 
         
@@ -41,10 +47,10 @@ const Comment = (props) => {
         <div>
                 {  <Card className={classes.root} >
                 <Box justifyContent="center" display="flex">
-                    <div>
+                    <div >
                 
-                       {images.slice(8,9).map(image => <ProfileImage picture={image}></ProfileImage>)}
-                    
+                       {/* {images.map(image => <ProfileImage picture={image}></ProfileImage>)} */}
+                      { picture[randomNum]}
                      
                     </div>
                     
